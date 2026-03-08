@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>xamã.xiter</title>
+
+<style>
+
+body{
+background:#0a0a0a;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.panel{
+width:320px;
+background:#111;
+border-radius:20px;
+padding:20px;
+box-shadow:0 0 40px #ff00cc;
+color:white;
+}
+
+.title{
+text-align:center;
+font-size:24px;
+color:#ff3fd8;
+margin-bottom:20px;
+text-shadow:0 0 10px #ff00cc;
+}
+
+.option{
+display:flex;
+justify-content:space-between;
+margin:10px 0;
+}
+
+.slider{
+width:100%;
+}
+
+button{
+width:100%;
+margin-top:20px;
+padding:15px;
+border:none;
+border-radius:20px;
+background:linear-gradient(90deg,#ff00cc,#ff4de6);
+color:white;
+font-size:18px;
+box-shadow:0 0 20px #ff00cc;
+}
+
+select{
+width:100%;
+padding:10px;
+border-radius:10px;
+margin-top:10px;
+background:#222;
+color:white;
+border:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="panel">
+
+<div class="title">xamã.xiter</div>
+
+<div class="option">Sistema A <input type="checkbox"></div>
+<div class="option">Sistema B <input type="checkbox"></div>
+<div class="option">Sistema C <input type="checkbox"></div>
+<div class="option">Sistema D <input type="checkbox"></div>
+
+<p>FOV (0-100)</p>
+<input type="range" min="0" max="100" class="slider">
+
+<p>Precisão (0-100)</p>
+<input type="range" min="0" max="100" class="slider">
+
+<p>Função Extra</p>
+<input type="range" min="0" max="100" class="slider">
+
+<select>
+<option>Cabeça</option>
+<option>Peito</option>
+<option>Corpo</option>
+</select>
+
+<button>INJETAR</button>
+
+</div>
+
+</body>
+</html>
